@@ -25,6 +25,7 @@ go-to: sandbox_menu
 - @editdepression: Edit Inflation, Unemployment, and Economic Growth
 - @conciliators: MAKE SURE TO KEEP KPD RELATION ABOVE NEUTRAL AND LEFTIST STRENGTH ABOVE REFORM STRENGTH UNTIL THE EVENT FIRES IN JUNE (JULY?) 1929
 - @editrelations: Edit Party Relations
+- @editinter: Edit International Relations
 - @editpartysupport: Edit Party Support
 - @miscparty: Miscellaneous Party Options
 - @editleft: Edit Left Faction Of SPD
@@ -51,12 +52,101 @@ go-to: sandbox_menu
 
 The end date has been enabled.
 
+@editinter
+
+- @interwest: Improve Relations with the West
+- @intereast: Improve Relations with the East
+- @intersov: Improve Relations with the Soviet Union
+- @interrepar: Deal with Reparations
+- @intereu: Deal with the EU
+- @interconcor: Deal with the Concordat
+- @interaust: Deal with the Austrian Civil War
+
+@interwest
+
+- @incrwest Increase West Relations (Not Working)
+- @decrwest: Decrease West Relations (Not Working)
+- @returnsandbox: Return to the Sandbox
+
+@incrwest
+
+- @hugewestincr: +400 West Relations (Not working)
+- @bigwestincr: +100 West Relations (Not Working)
+- @mediumwestincr: +20 West Relations (Not Working)
+- @medsmallwestincr: +10 West Relations (Not Working)
+- @smallwestincr: +5 West Relations (Not Working)
+- @tinywestincr: +1 West Relations (Not Working)
+- @returnsandobx: Return to Sandobx
+
+@decrwest
+
+- @hugewestdecr: -400 West Relations (Not Working)
+- @bigwestdecr: -100 West Relations (Not Working)
+- @mediumwestdecr: -20 West Relations (Not Working)
+- @medsmallwestdecr: -10 West Relations (Not Working)
+- @smallwestdecr: -5 West Relations (Not Working)
+- @tinywestdecr: -1 West Relations (Not working)
+- @returnsandobx: Return to Sandbox
+
+@intereast
+
+- @increast: Increase East Relations (Not Working)
+- @decreast Decrease East Relations (Not Working)
+- @returnsandbox: Return to the Sandbox
+
+- @increast
+
+- @hugeeastincr: +400 East Relations (Not Working)
+- @bigeastincr: +100 East Relations (Not Working)
+
+- @decreast
+
+- @hugeeastdecr: -400 East Relations (Not Working)
+- @bigeastdecr: -100 East Relations (Not Working)
+
+@intersov
+
+- @incrsov: Increase Soviet Relations (Not Working)
+- @decrsov: Decrease Soviet Relations (Not Working)
+- @returnsandbox: Return to the Sandbox
+
+@interrepar
+
+- @incrrepar: Increase progress to finish reparations (Not Working)
+- @decrrepar: Decrease progress to finish reparations (Not Working)
+- @finishrepar: Finish Reparations (Not Working)
+- @returnsandbox: Return to sandbox
+
+@intereu
+
+- @increu: Increase progress to forming the EU (Not Working)
+- @decreu: Decrease progress to forming the EU (Not Working)
+- @formeu: Form the EU (Not Working)
+- @returnsandbox: Return to the Sandobx
+
+@interconcor
+
+- @incrcon: Increase progress for the Reichskonkordat (Not Working)
+- @decrcon: Decrease Progress for the Reichskonkordat (Not Working)
+- @formcon: Form the Reichskonkordat (Not Working)
+- @incrprucon: Increase progress for the Prussian Concordat (Not Working)
+- @decrprucon: Decrease progress for the Prussian Concordat (Not Working)
+- @formprucon: Form the Prussian Concordat (Not Working)
+- @returnsandbox Return to Sandobx
+
+@interaust
+
+- @incraust: Increase SDAPO Support (Not working)
+- @decraust Decrease SDAPO Support (Not working)
+- @returnsandbox: Return to Sandbox
+
 @nat_rep_support
 
 - @incr_rep: Increase Support for the Republic
 - @decr_rep: Decrease Support for the Republic
 - @incr_nat: Increase Nationalism
 - @decr_nat: Decrease Nationalism
+- @returnsandbox: Return to the Sandbox
 
 @incr_rep
 go-to: nat_rep_support
