@@ -142,12 +142,12 @@ go-to: decrwest
 - @decreast: Decrease East Relations (Not Working)
 - @returnsandbox: Return to the Sandbox
 
-- @increast
+@increast
 
 - @hugeeastincr: +400 East Relations (Not Working)
 - @bigeastincr: +100 East Relations (Not Working)
 
-- @decreast
+@decreast
 
 - @hugeeastdecr: -400 East Relations (Not Working)
 - @bigeastdecr: -100 East Relations (Not Working)
