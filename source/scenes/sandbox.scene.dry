@@ -146,11 +146,13 @@ go-to: decrwest
 
 - @hugeeastincr: +400 East Relations (Not Working)
 - @bigeastincr: +100 East Relations (Not Working)
+- @mediumeastincr: +20 East Relations (Not Working)
 
 @decreast
 
 - @hugeeastdecr: -400 East Relations (Not Working)
 - @bigeastdecr: -100 East Relations (Not Working)
+- @mediumeastdecr: -20 East Relations (Not Working)
 
 @intersov
 
@@ -185,7 +187,7 @@ go-to: decrwest
 @interaust
 
 - @incraust: Increase SDAPO Support (Not working)
-- @decraust Decrease SDAPO Support (Not working)
+- @decraust: Decrease SDAPO Support (Not working)
 - @returnsandbox: Return to Sandbox
 
 @nat_rep_support
