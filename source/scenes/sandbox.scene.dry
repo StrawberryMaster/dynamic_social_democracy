@@ -112,6 +112,30 @@ go-to: incrwest
 - @tinywestdecr: -1 West Relations (Not working)
 - @returnsandobx: Return to Sandbox
 
+@hugewestdecr
+on-arrival: west_relation -= 400
+go-to: decrwest
+
+@bigwestdecr
+on-arrival: west_relation -= 100
+go-to: decrwest
+
+@mediumwestdecr
+on-arrival: west_relation -= 20
+go-to: decrwest
+
+@medsmallwestdecr
+on-arrival: west_relation -= 10
+go-to decrwest
+
+@smallwestdecr
+on-arrival: west_relation -= 5
+go-to: decrwest
+
+@tinywestdecr
+on-arrival: west_relation -= 1
+go-to: decrwest
+
 @intereast
 
 - @increast: Increase East Relations (Not Working)
