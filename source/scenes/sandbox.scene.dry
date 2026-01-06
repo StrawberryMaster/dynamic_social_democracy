@@ -64,19 +64,43 @@ The end date has been enabled.
 
 @interwest
 
-- @incrwest Increase West Relations (Not Working)
+- @incrwest: Increase West Relations (Not Working)
 - @decrwest: Decrease West Relations (Not Working)
 - @returnsandbox: Return to the Sandbox
 
 @incrwest
 
-- @hugewestincr: +400 West Relations (Not working)
-- @bigwestincr: +100 West Relations (Not Working)
-- @mediumwestincr: +20 West Relations (Not Working)
-- @medsmallwestincr: +10 West Relations (Not Working)
-- @smallwestincr: +5 West Relations (Not Working)
-- @tinywestincr: +1 West Relations (Not Working)
-- @returnsandobx: Return to Sandobx
+- @hugewestincr: +400 West Relations
+- @bigwestincr: +100 West Relations
+- @mediumwestincr: +20 West Relations 
+- @medsmallwestincr: +10 West Relations
+- @smallwestincr: +5 West Relations
+- @tinywestincr: +1 West Relations
+- @returnsandbox: Return to Sandbox
+
+@hugewestincr
+on-arrival: west_relation += 400
+go-to: incrwest
+
+@bigwestincr
+on-arrival: west_relation += 100
+go-to: incrwest
+
+@mediumwestincr
+on-arrival: west_relation += 20
+go-to: incrwest
+
+@medsmallwestincr
+on-arrival: west_relation += 10
+go-to: incrwest
+
+@smallwestincr
+on-arrival: west_relation += 5
+go-to: incrwest
+
+@tinywestincr
+on-arrival: west_relation += 1
+go-to: incrwest
 
 @decrwest
 
