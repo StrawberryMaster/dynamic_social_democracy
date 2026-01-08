@@ -138,151 +138,151 @@ go-to: decrwest
 
 @intereast
 
-- @increast: Increase East Relations (Not Working)
-- @decreast: Decrease East Relations (Not Working)
+- @increast: Increase East Relations 
+- @decreast: Decrease East Relations 
 - @returnsandbox: Return to the Sandbox
 
 @increast
 
-- @hugeeastincr: +400 East Relations (Not Working)
-- @bigeastincr: +100 East Relations (Not Working)
-- @mediumeastincr: +20 East Relations (Not Working)
-- @medsmalleastincr: +10 East Relations (Not Working)
-- @smalleastincr: +5 East Relations (Not Working)
-- @tinyeastincr: +1 East Relations (Not Working)
+- @hugeeastincr: +400 East Relations 
+- @bigeastincr: +100 East Relations 
+- @mediumeastincr: +20 East Relations 
+- @medsmalleastincr: +10 East Relations
+- @smalleastincr: +5 East Relations 
+- @tinyeastincr: +1 East Relations 
 - @returnsandbox: Reutrn to Sandbox
 
 @hugeeastincr
-
-wip
+on-arrival: east_relation += 400
+go-to: increast
 
 @bigeastincr
-
-wip
+on-arrival: east_relation += 100
+go-to: increast
 
 @mediumeastincr
-
-wip
+on-arrival: east_relation += 20
+go-to: increast
 
 @medsmalleastincr
-
-wip
+on-arrival: east_relation += 10
+go-to: increast
 
 @smalleastincr
-
-wip
+on-arrival: east_relation += 5
+go-to: increast
 
 @tinyeastincr
-
-wip
+on-arrival: east_relation += 1
+go-to: increast
 
 @decreast
 
-- @hugeeastdecr: -400 East Relations (Not Working)
-- @bigeastdecr: -100 East Relations (Not Working)
-- @mediumeastdecr: -20 East Relations (Not Working)
-- @medsmalleastdecr: -10 East Relations (Not Working)
-- @smalleastdecr: -5 East Relations (Not Working)
-- @tinyeastdecr: -1 East Relations (Not Working)
+- @hugeeastdecr: -400 East Relations 
+- @bigeastdecr: -100 East Relations 
+- @mediumeastdecr: -20 East Relations 
+- @medsmalleastdecr: -10 East Relations 
+- @smalleastdecr: -5 East Relations
+- @tinyeastdecr: -1 East Relations 
 - @returnsandbox: Return to Sandbox
 
 @hugeeastdecr
-
-wip
+on-arrival: east_relation -= 400
+go-to: decreast
 
 @bigeastdecr
-
-wip
+on-arrival: east_relation -= 100
+go-to: decreast
 
 @mediumeastdecr
-
-wip
+on-arrival: east_relation -= 20
+go-to: decreast
 
 @medsmalleastdecr
-
-wip
+on-arrival: east_relation -= 10
+go-to: decreast
 
 @smalleastdecr
-
-wip
+on-arrival: east_relation -= 5
+go-to: decreast
 
 @tinyeastdecr
-
-wip
+on-arrival: east_relation -= 1
+go-to: decreast
 
 @intersov
 
-- @incrsov: Increase Soviet Relations (Not Working)
-- @decrsov: Decrease Soviet Relations (Not Working)
+- @incrsov: Increase Soviet Relations 
+- @decrsov: Decrease Soviet Relations 
 - @returnsandbox: Return to the Sandbox
 
 @incrsov
 
-- @hugesovincr: +400 Soviet Relations (Not Working)
-- @bigsovincr: +100 Soviet Relations (Not Working)
-- @mediumsovincr: +20 Soviet Relations (Not Working)
-- @medsmallsovincr: +10 Soviet Relations (Not Working)
-- @smallsovincr: +5 Soviet Relations (Not Working)
-- @tinysovincr: +1 Soviet Relations (Not Working)
+- @hugesovincr: +400 Soviet Relations 
+- @bigsovincr: +100 Soviet Relations 
+- @mediumsovincr: +20 Soviet Relations 
+- @medsmallsovincr: +10 Soviet Relations 
+- @smallsovincr: +5 Soviet Relations 
+- @tinysovincr: +1 Soviet Relations 
 - @returnsandbox: Return to Sandbox
 
 @hugesovincr
-
-wip
+on-arrival: soviet_relation += 400
+go-to: incrsov
 
 @bigsovincr
-
-wip
+on-arrival: soviet_relation += 100
+go-to: incrsov
 
 @mediumsovincr
-
-wip
+on-arrival: soviet_relation += 20
+go-to: incrsov
 
 @medsmallsovincr
-
-wip
+on-arrival: soviet_relation += 10
+go-to: incrsov
 
 @smallsovincr
-
-wip
+on-arrival: soviet_relation += 5
+go-to: incrsov
 
 @tinysovincr
-
-wip
+on-arrival: soviet_relation += 1
+go-to: incrsov
 
 @decrsov
 
-- @hugesovdecr: -400 Soviet Relations (Not Working)
-- @bigsovdecr: -100 Soviet Relations (Not Working)
-- @mediumsovdecr: -20 Soviet Relations (Not Working)
-- @medsmallsovdecr: - 10 Soviet Relations (Not Working)
-- @smallsovdecr: -5 Soviet Relations (Not Working)
-- @tinysovdecr: -1 Soviet Relations (Not Working)
+- @hugesovdecr: -400 Soviet Relations 
+- @bigsovdecr: -100 Soviet Relations 
+- @mediumsovdecr: -20 Soviet Relations 
+- @medsmallsovdecr: - 10 Soviet Relations
+- @smallsovdecr: -5 Soviet Relations 
+- @tinysovdecr: -1 Soviet Relations
 - @returnsandbox: Return to Sandbox
 
 @hugesovdecr
-
-wip
+on-arrival: soviet_relation -= 400
+go-to: decrsov
 
 @bigsovdecr
-
-wip
+on-arrival: soviet_relation -= 100
+go-to: decrsov
 
 @mediumsovdecr
-
-wip
+on-arrival: soviet_relation -= 20
+go-to: decrsov
 
 @medsmallsovdecr
-
-wip
+on-arrival: soviet_relation -= 10
+go-to: decrsov
 
 @smallsovdecr
-
-wip
+on-arrival: soviet_relation -= 5
+go-to: decrsov
 
 @tinysovdecr
-
-wip
+on-arrival: soviet_relation -= 1
+go-to: decrsov
 
 @interrepar
 
