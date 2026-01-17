@@ -333,32 +333,26 @@ wip
 - @returnsandbox: Return to sandbox
 
 @incrcon
-
 go-to: interconcor
 on-arrival: reichskonkordat_progress += 1;
 
 @decrcon
-
 go-to: interconcor
 on-arrival: reichskonkordat_progress -= 1;
 
 @formcon
-
 go-to: interconcor
 on-arrival: reichskonkordat = 1; z_relation += 15*(1-dissent); catholics_spd += 8*(1-dissent); catholics_z += 5 if in_weimar_coalition or in_grand_coalition or in_popular_front; foreign_goal_spd_peoples += 1
 
 @incrprucon
-
 go-to: interconcor
 on-arrival: prussian_concordat_progress += 1;
 
 @decrprucon
-
 go-to: interconcor
 on-arrival: prussian_concordat_progress -= 1;
 
 @formprucon
-
 go-to: interconcor
 on-arrival: prussian_concordat = 1; z_relation += 8; catholics_spd += 3*(1-dissent); catholics_dnvp -= 2 if dnvp_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
