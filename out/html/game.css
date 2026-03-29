@@ -75,7 +75,6 @@ header {
 #header-links {
   text-align: left;
   float: left;
-  display: inline-block;
   margin-bottom: 0.5em;
   padding-left: 1em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -397,12 +396,6 @@ blockquote+blockquote.attribution {
   z-index: -99;
 }
 
-.b {}
-
-.save_button {}
-
-.delete_button {}
-
 /*
  * Card stuff for dendrynexus
  * 
@@ -414,12 +407,6 @@ ul.pinned-cards {
   list-style: none;
   padding-left: 0;
 }
-
-.hand {}
-
-.pinned-cards {}
-
-.deck {}
 
 a.card {
   display: inline-block;
@@ -496,7 +483,6 @@ a.card:hover .card-tooltip {
 /* Unlike cards, face images can have different sizes. */
 .face-figure {
   /*vertical-align: top;*/
-  display: inline-block;
   border: 5px solid var(--card-border-color);
   float: left;
   max-width: 35%;
@@ -508,7 +494,6 @@ a.card:hover .card-tooltip {
 
 .face-figure2 {
   /*vertical-align: top;*/
-  display: inline-block;
   border: 5px solid #ccc;
   float: left;
   /*max-height: 180px;*/
@@ -624,7 +609,7 @@ img {
     display: none;
     float: none;
     right: 0;
-    marginRight: -6em;
+    margin-right: -6em;
   }
 
   #mid_panel {
@@ -867,6 +852,7 @@ th {
 }
 
 .tooltip-text {
+  cursor: help;
   text-decoration: underline;
   text-decoration-style: dotted;
 }
