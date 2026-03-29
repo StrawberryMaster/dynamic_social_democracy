@@ -679,6 +679,26 @@ th {
   /* Prevents text from wrapping */
 }
 
+/* Music player controls in options overlay */
+#music_mute {
+  vertical-align: middle;
+  margin: 0 0.35em 0 0.2em;
+}
+
+#music_volume {
+  vertical-align: middle;
+  width: 10em;
+  max-width: 40vw;
+  accent-color: var(--link-color);
+}
+
+#music_volume_value {
+  display: inline-block;
+  min-width: 3.5ch;
+  margin-left: 0.35em;
+  font-variant-numeric: tabular-nums;
+}
+
 /* Styles for parties */
 .seat.kpd {
   fill: #700000;
@@ -908,4 +928,11 @@ th {
 
 .progress-text {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  #music_volume {
+    width: 7.5em;
+    max-width: 34vw;
+  }
 }
