@@ -219,6 +219,26 @@ window.disableGrayMode = function() {
     $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
 };
 
+  window._sidebarRenderScheduled = false;
+  window.scheduleSidebarRender = function() {
+      if (window._sidebarRenderScheduled) {
+          return;
+      }
+      window._sidebarRenderScheduled = true;
+
+      var render = function() {
+          window._sidebarRenderScheduled = false;
+          window.updateSidebar();
+          window.updateSidebarRight();
+      };
+
+      if (window.requestAnimationFrame) {
+          window.requestAnimationFrame(render);
+      } else {
+          setTimeout(render, 0);
+      }
+  };
+
   window.changeTab = function(newTab, tabId, isRight) {
       if (tabId == 'poll_tab' && (dendryUI.dendryEngine.state.qualities.historical_mode || dendryUI.dendryEngine.state.qualities.rubicon)) {
           if (dendryUI.dendryEngine.state.qualities.historical_mode && !dendryUI.dendryEngine.state.qualities.rubicon) window.alert('Polls are not available in historical mode.');
@@ -226,11 +246,13 @@ window.disableGrayMode = function() {
           return;
       }
       var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
+            var tabButtons = document.querySelectorAll('.tab_button');
+            tabButtons.forEach(function(button) {
+                    button.classList.remove('active');
+            });
+            if (tabButton) {
+                    tabButton.classList.add('active');
+            }
       if (isRight) {
         window.statusTabRight = newTab;
         window.updateSidebarRight();
@@ -241,8 +263,7 @@ window.disableGrayMode = function() {
   };
 
   window.onDisplayContent = function() {
-      window.updateSidebar();
-      window.updateSidebarRight();
+      window.scheduleSidebarRender();
   };
 
   window.toggleDem = function toggleDemographicTable() {
@@ -349,9 +370,8 @@ window.disableGrayMode = function() {
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
     window.statusTab = "status";
-    window.updateSidebar();
     window.statusTabRight = "status_right";
-    window.updateSidebarRight();
+    window.scheduleSidebarRender();
   };
 
 }());
