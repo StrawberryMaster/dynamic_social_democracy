@@ -294,14 +294,17 @@ go-to: decrsov
 @incrrepar
 
 wip
+- @interrepar: return
 
 @decrrepar
 
 wip
+- @interrepar: return
 
 @finishrepar
 
 wip
+- @interrepar: return
 
 @intereu
 
@@ -313,14 +316,17 @@ wip
 @increu
 
 wip
+- @intereu: return
 
 @decreu
 
 wip
+- @intereu: return
 
 @formeu
 
 wip
+- @intereu: return
 
 @interconcor
 
@@ -365,10 +371,12 @@ go-to: interconcor
 @incraust
 
 wip
+- @interaust: return
 
 @decraust
 
 wip
+- @interaust: return
 
 @nat_rep_support
 
@@ -548,7 +556,7 @@ on-arrival: capital_strike_progress -= 1
 @capstrikequery
 go-to: sandbox_menu
 
-[? if capital_strike_progress = 0: you have 0 capital strike progress ?][? if capital_strike__progress = 1: You have 1 capital strike progress ?][? if capital_strike__progress = 2: You have 2 capital strike progress ?][? if capital_strike__progress = 3: You have 3 capital strike progress ?][? if capital_strike__progress = 4: You have 4 capital strike progress ?][? if capital_strike_progress = 5: You have 5 capital strike progress ?][? if capital_strike_progress = 6: You have 6 capital strike progress ?][? if capital_strike_progress = 7: You have 7 capital strike progress ?][? if capital_strike__progress = 8: You have 8 capital strike progress, a capital strike is near ?][? if capital_strike__progress = 9: You have 9 capital strike progress, a capital strike is imminent ?][? if capital_strike_progress = 10: You have 10 capital strike progress, a capital strike is imminent ?]
+[? if capital_strike_progress = 0: you have 0 capital strike progress ?][? if capital_strike_progress = 1: You have 1 capital strike progress ?][? if capital_strike_progress = 2: You have 2 capital strike progress ?][? if capital_strike_progress = 3: You have 3 capital strike progress ?][? if capital_strike_progress = 4: You have 4 capital strike progress ?][? if capital_strike_progress = 5: You have 5 capital strike progress ?][? if capital_strike_progress = 6: You have 6 capital strike progress ?][? if capital_strike_progress = 7: You have 7 capital strike progress ?][? if capital_strike_progress = 8: You have 8 capital strike progress, a capital strike is near ?][? if capital_strike_progress = 9: You have 9 capital strike progress, a capital strike is imminent ?][? if capital_strike_progress = 10: You have 10 capital strike progress, a capital strike is imminent ?]
 
 @editcoupprogress
 
@@ -821,7 +829,7 @@ Q.lvp_relation += 15;
 @decreaselvprel
 go-to: editrelations
 on-arrival: {!
-Q.lvp_relation += 15;
+Q.lvp_relation -= 15;
 !}
 
 @increasecenterrel
