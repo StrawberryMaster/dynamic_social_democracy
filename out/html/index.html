@@ -103,6 +103,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        Music player:
+                    </td>
+                    <td colspan="4">
+                        <label for="music_mute">Mute track</label>
+                        <input type="checkbox" id="music_mute" onclick="window.toggleMusicMute(this.checked);">
+                        <label for="music_volume" style="margin-left: 12px;">Volume</label>
+                        <input type="range" id="music_volume" min="0" max="100" value="100" step="1" oninput="window.setMusicVolume(this.value / 100);" style="vertical-align: middle;">
+                        <span id="music_volume_value">100%</span>
+                    </td>
+                </tr>
+                <tr>
                     <td> <hr> </td>
                 </tr>
                 <tr>
